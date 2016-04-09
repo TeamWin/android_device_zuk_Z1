@@ -1,0 +1,6 @@
+/cache            ext4       /dev/block/bootdevice/by-name/cache
+/system           ext4       /dev/block/bootdevice/by-name/system
+/data             ext4       /dev/block/bootdevice/by-name/userdata
+/boot             emmc       /dev/block/bootdevice/by-name/boot
+/recovery         emmc       /dev/block/bootdevice/by-name/recovery
+/usb-otg          vfat       /devices/platform/xhci-hcd/usb1                     flags=display="USB OTG";storage;wipeingui;removable
