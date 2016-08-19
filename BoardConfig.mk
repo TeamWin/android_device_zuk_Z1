@@ -182,35 +182,6 @@ TW_INCLUDE_CRYPTO := true
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 BOARD_SUPPRESS_EMMC_WIPE := true
 
-PRODUCT_COPY_FILES += device/zuk/ham/twrp.fstab:recovery/root/etc/twrp.fstab
-
-ifneq ($(TARGET_RECOVERY_ROOT_OUT),)
-    $(shell mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/firmware/image)
-    $(shell mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib/hw)
-    $(shell ln -s /sbin $(TARGET_RECOVERY_ROOT_OUT)/system/bin)
-endif
-
-PRODUCT_COPY_FILES += \
-    vendor/zuk/ham/proprietary/bin/qseecomd:recovery/root/system/bin/qseecomd \
-    vendor/zuk/ham/proprietary/bin/linker:recovery/root/system/bin/linker \
-    vendor/zuk/ham/proprietary/vendor/lib/libssd.so:recovery/root/vendor/lib/libssd.so \
-    vendor/zuk/ham/proprietary/vendor/lib/librpmb.so:recovery/root/vendor/lib/librpmb.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libdiag.so:recovery/root/vendor/lib/libdiag.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libdrmfs.so:recovery/root/vendor/lib/libdrmfs.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so \
-    vendor/zuk/ham/proprietary/vendor/lib/libdrmtime.so:recovery/root/vendor/lib/libdrmtime.so \
-    vendor/zuk/ham/proprietary/lib/hw/keystore.msm8974.so:recovery/root/vendor/lib/hw/keystore.msm8974.so \
-    vendor/zuk/ham/proprietary/firmware/image/keymaste.b00:recovery/root/firmware/image/keymaste.b00 \
-    vendor/zuk/ham/proprietary/firmware/image/keymaste.b01:recovery/root/firmware/image/keymaste.b01 \
-    vendor/zuk/ham/proprietary/firmware/image/keymaste.b02:recovery/root/firmware/image/keymaste.b02 \
-    vendor/zuk/ham/proprietary/firmware/image/keymaste.b03:recovery/root/firmware/image/keymaste.b03 \
-    vendor/zuk/ham/proprietary/firmware/image/keymaste.mdt:recovery/root/firmware/image/keymaste.mdt \
-    vendor/zuk/ham/proprietary/firmware/image/cmnlib.b00:recovery/root/firmware/image/cmnlib.b00 \
-    vendor/zuk/ham/proprietary/firmware/image/cmnlib.b01:recovery/root/firmware/image/cmnlib.b01 \
-    vendor/zuk/ham/proprietary/firmware/image/cmnlib.b02:recovery/root/firmware/image/cmnlib.b02 \
-    vendor/zuk/ham/proprietary/firmware/image/cmnlib.b03:recovery/root/firmware/image/cmnlib.b03 \
-    vendor/zuk/ham/proprietary/firmware/image/cmnlib.mdt:recovery/root/firmware/image/cmnlib.mdt
-
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
