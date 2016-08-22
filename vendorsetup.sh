@@ -1,1 +1,3 @@
-add_lunch_combo omni_Z1-eng
+add_lunch_combo cm_ham-user
+add_lunch_combo cm_ham-userdebug
+add_lunch_combo cm_ham-eng
