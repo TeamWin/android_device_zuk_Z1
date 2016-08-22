@@ -1,1 +1,0 @@
-TWRP device tree for Zuk Z1 Ham. Omni build.
