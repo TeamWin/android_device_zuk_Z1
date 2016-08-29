@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "CyanogenMod/android_vendor_cm",
+    "target_path": "vendor/cm",
+    "remote": "github",
+    "revision": "cm-13.0"
+  },
+  {
+    "repository": "android_device_qcom_sepolicy",
+    "target_path": "device/qcom/sepolicy"
+  },
+  {
+    "repository": "CyanogenMod/android_kernel_cyanogen_msm8974",
+    "target_path": "kernel/cyanogen/msm8974",
+    "remote": "github",
+    "revision": "cm-13.0"
+  }
+]
