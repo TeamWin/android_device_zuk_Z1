@@ -4,6 +4,7 @@
 /persist        ext4    /dev/block/bootdevice/by-name/persist
 /boot             emmc       /dev/block/bootdevice/by-name/boot
 /recovery         emmc       /dev/block/bootdevice/by-name/recovery
+/misc             emmc       /dev/block/bootdevice/by-name/misc
 /firmware       vfat    /dev/block/bootdevice/by-name/modem    flags=display="Modem";mounttodecrypt;fsflags=ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
 /usb-otg          auto       /devices/platform/xhci-hcd*                     flags=display="USB OTG";storage;wipeingui;removable
 /sdcard1        auto    /devices/msm_sdcc.2/mmc_host*   flags=storage;removable;encryptable=userdata
